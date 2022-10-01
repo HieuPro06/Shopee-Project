@@ -546,3 +546,33 @@ i.action-like-icon-fill{
     color: var(--text-color);
     padding-left: 10px;
 }
+.slider__wrapper{
+    display: flex;
+    justify-content: center;
+}
+.slider__slide{
+    padding-right: 10px;
+}
+.slider__slide__content{
+    width: 767px;
+    height: 240px;
+    background-image: url(../img/slide/slide1.jpg);
+    /* background-image: url(../img/slide/slide5.png); */
+    background-size: 100% 98%;
+    background-repeat: no-repeat;
+}
+.slider__fixed__1{
+    padding-bottom: 7px;
+}
+.slider__1__background{
+    width:381px;
+    height: 114px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.slider__2__background{
+    width:381px;
+    height: 114px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

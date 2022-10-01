@@ -62,3 +62,30 @@ listOfHistory.forEach(function(element,index){
         inputSearch.value = textSearch;
     })
 })
+
+/* Tạo QC */
+const slider = document.querySelector('.slider__slide__content');
+var arrSlide = ["./img/slide/slide1.jpg","./img/slide/slide2.png","./img/slide/slide3.png",
+                "./img/slide/slide4.png","./img/slide/slide5.png"];
+var i = 1 ;
+var lengthS = arrSlide.length;
+setInterval(function(){
+    slider.style.backgroundImage = `url(${arrSlide[i]})`;
+    if(i == lengthS - 1){
+        i = 0 ;
+    }
+    else{
+        ++i;
+    }
+},3000);
+/*
+    List CV : 
+        1.Thêm thẻ a với logo Shopee
+        2.Có chức năng bấm và hiện nội dung lên input - đồng thời
+        lọc ra sản phẩm phù hợp theo input (Ko bắt buộc)
+        3. Tạo chức năng cho nút tìm kiếm Kính lúp (Ko bắt buộc)
+        4. Chèn sản phẩm vào giỏ hàng khi + (Ko bắt buộc)
+        5. Tạo chức năng cho tất cả mục trong home-filter
+        6. Tạo slide quảng cáo
+        7.(KHÓ) Tạo Trang có chức năng để mua(Thêm giỏ hàng) cho từng sản phẩm khi click vào
+*/
